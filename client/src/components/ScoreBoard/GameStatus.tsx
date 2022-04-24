@@ -8,6 +8,7 @@ interface GameStatusProps {
 
 const GameStatus = ({ game }: GameStatusProps) => {
   const isFinal = game.gameStatusText.trim() === "Final";
+  const isPlaying = Boolean(game.gameClock);
 
   return (
     <Card
@@ -59,12 +60,16 @@ const GameStatus = ({ game }: GameStatusProps) => {
             spellCheck
             size="sm"
             sx={(theme) => ({
-              color: isFinal ? theme.colors.dark : theme.colors.green,
+              color: isFinal
+                ? theme.colors.dark
+                : isPlaying
+                ? theme.colors.green
+                : theme.colors.blue[5],
             })}
           >
             {game.gameStatusText}
           </Text>
-          {!isFinal && <Loader variant="dots" color="green" size="sm" />}
+          {isPlaying && <Loader variant="dots" color="green" size="sm" />}
         </Box>
       </Group>
     </Card>
