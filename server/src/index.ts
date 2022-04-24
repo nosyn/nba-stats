@@ -1,3 +1,5 @@
+import path from "path";
+
 // Server
 import { createServer } from "http";
 import express from "express";
@@ -29,6 +31,16 @@ const initializeHttpServer = async () => {
     cors: false,
     path: GRAPHQL_PATH,
   });
+
+  if (__prod__) {
+    // Set static folder
+    app.use(express.static(path.resolve(__dirname, "./client")));
+
+    // Serve the static files
+    app.get("*", function (_, response) {
+      response.sendFile(path.resolve(__dirname, "./client", "index.html"));
+    });
+  }
 
   return httpServer;
 };
