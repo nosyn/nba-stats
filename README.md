@@ -1,3 +1,3 @@
 # nba-stats
 
-!(image)[/resources/image.png]
+![image](/resources/image.png)
