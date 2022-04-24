@@ -1,4 +1,4 @@
-# NBA Stats
+# NBA Stats - Live demo: https://morning-basin-60560.herokuapp.com/
 
 ### How to use
 #### Development Environment
