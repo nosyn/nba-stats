@@ -4,10 +4,10 @@ import express from "express";
 import cors from "cors";
 
 // Constants
-import { __prod__, GRAPHQL_PATH } from "./constants";
+import { __prod__ } from "./constants";
 
 // Configs
-import { PORT, CORS_CONFIG } from "./configs";
+import { PORT, CORS_CONFIG, GRAPHQL_PATH } from "./configs";
 
 // Apollo
 import initializeApolloServer from "./graphql";
@@ -40,7 +40,9 @@ const main = async () => {
   await new Promise<void>((resolve) =>
     httpServer.listen({ port: PORT }, resolve)
   );
-  console.log(`🚀 Server ready at http://localhost:${PORT}${GRAPHQL_PATH}`);
+  console.log(
+    `🚀🚀🚀  Server ready at http://localhost:${PORT}${GRAPHQL_PATH} 🚀🚀🚀 `
+  );
 };
 
 main();

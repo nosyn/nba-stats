@@ -1,4 +1,4 @@
-import { Box, Card, Divider, Group, Text } from "@mantine/core";
+import { Box, Card, Divider, Group, Loader, Text } from "@mantine/core";
 import { Game } from "../../graphql/generated/graphql";
 import TeamScore from "./TeamScore";
 
@@ -7,27 +7,64 @@ interface GameStatusProps {
 }
 
 const GameStatus = ({ game }: GameStatusProps) => {
-  console.log("game: ", game);
+  const isFinal = game.gameStatusText.trim() === "Final";
+
   return (
-    <Card p="sm">
-      <Text size="sm" pl="sm">
+    <Card
+      p="sm"
+      sx={(theme) => ({
+        ":hover": {
+          backgroundColor: theme.colors.gray[1],
+        },
+      })}
+      withBorder
+      shadow="xs"
+    >
+      <Text
+        size="sm"
+        pl="sm"
+        sx={{
+          whiteSpace: "nowrap",
+        }}
+      >
         {game.seriesGameNumber} ({game.seriesText})
       </Text>
       <Group>
-        <Box style={{ flexGrow: 5 }}>
+        <Box
+          sx={{
+            flexGrow: 5,
+            flexBasis: "150px",
+          }}
+        >
           <TeamScore team={game.homeTeam} />
           <TeamScore team={game.awayTeam} />
         </Box>
 
         <Divider
-          style={{
+          sx={{
             alignSelf: "stretch",
             height: "auto",
+            flexBasis: 0,
           }}
           orientation="vertical"
         />
-        <Box style={{ flexGrow: 1 }} p={1}>
-          {game.gameStatusText}
+        <Box
+          sx={{
+            flexGrow: 2,
+            flexBasis: 0,
+            textAlign: "center",
+          }}
+        >
+          <Text
+            spellCheck
+            size="sm"
+            sx={(theme) => ({
+              color: isFinal ? theme.colors.dark : theme.colors.green,
+            })}
+          >
+            {game.gameStatusText}
+          </Text>
+          {!isFinal && <Loader variant="dots" color="green" size="sm" />}
         </Box>
       </Group>
     </Card>

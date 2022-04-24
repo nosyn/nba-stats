@@ -1,14 +1,14 @@
 import { RESTDataSource } from "apollo-datasource-rest";
+import { LIVE_DATA } from "../../configs/nbaConfigs";
 
 class LiveData extends RESTDataSource {
   constructor() {
     super();
-    // the Catstronauts catalog is hosted on this server
-    this.baseURL = "https://cdn.nba.com/static/json/liveData";
+    this.baseURL = LIVE_DATA.BASE_URL;
   }
 
   getTodaysScoreBoard() {
-    return this.get("/scoreboard/todaysScoreboard_00.json");
+    return this.get(LIVE_DATA.TODAYS_SCORE_BOARD);
   }
 }
 

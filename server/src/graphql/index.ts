@@ -22,7 +22,6 @@ const initializeApolloServer = (httpServer: Server) =>
         liveData: new LiveData(),
       };
     },
-    // context,
   });
 
 export default initializeApolloServer;

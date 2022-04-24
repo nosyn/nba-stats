@@ -13,13 +13,15 @@ const LiveScoreBoards = () => {
 
   const games = data.todaysScoreBoard.games;
 
-  if (!games || !games[0] || games?.length <= 0)
-    return <div>No game at the moment</div>;
+  if (!games || games?.length <= 0) return <div>No game at the moment</div>;
 
   return (
     <Box>
       <Text>Today: {data.todaysScoreBoard.gameDate}</Text>
-      <SimpleGrid cols={2}>
+      <SimpleGrid
+        cols={2}
+        breakpoints={[{ maxWidth: 640, cols: 1, spacing: "sm" }]}
+      >
         {games.map((game) =>
           game ? <GameStatus game={game} key={`game-${game.gameId}`} /> : null
         )}
