@@ -1,0 +1,1200 @@
+{
+  "ENV": {
+    "PROD": {
+      "APP_SERVER_CDN_PREFIX": "https://watchnba.cdnfastly.endeavorstreaming.net/",
+      "scheduleFeed": "https://nlnbamdnyc-a.akamaihd.net/fs/nba/feeds_s2019/schedule/{date}.js",
+      "epgFeed": "https://content-api-prod.nba.com/public/1/nba-tv/{region}/episodes",
+      "EPG_PUBLIC_KEY": "3082010a0282010100cb83ffd51d9a8ca881688dc56da5e251f848d5e78d1424f2c016fd112c0ab638e21eb7a03360be73b7ab0cbe2899673a4ffa27cb4fca7389faf3cc37a7d3e58eef81adddffa07f4f7cb4873d200b705b63e5bf1b7bf7863e71dd2023e9efc31c1fc82d70bf3209b9416f735c80ddebd23bcf82f48966a23cb329a1e807192b56d1c7e16cc68353641fa301a3b51a88d0a8e4752b4de86f018a4599b270d2f1dbace3d56444ed1510b8c36e094649b3b1f245e2e2864c76ea0c72026f0ed776c1c227f37e954312dfb3f75849a22b03c15261c0a306106d3072d0665d8a03e0487d2ce4b4f4c85252871084ca3a15da502b6de502347f4f54edff15e2ec62899f0203010001",
+      "GAME_SITE_PREFIX": "https://www.nba.com/",
+      "pageNavFeed": {
+        "featured": "https://content-api-prod.nba.com/public/1/endeavor/layout/watch/landing",
+        "nbatv": "https://content-api-prod.nba.com/public/1/endeavor/layout/watch/nbatv",
+        "leaguepass": "https://content-api-prod.nba.com/public/1/endeavor/layout/watch/leaguepass",
+        "classicgames": "https://content-api-prod.nba.com/public/1/endeavor/layout/watch/nba-tv-classic-games"
+      },
+      "videoListFeed": "https://content-api-prod.nba.com/public/1/endeavor/video-list/{curation}/{slug}",
+      "tvShowsFeed": "https://content-api-prod.nba.com/public/1/endeavor/video-list/nba-tv-series",
+      "videoFeed": "https://content-api-prod.nba.com/public/1/endeavor/video/{seoName}",
+      "gameVideoFeed": "https://content-api-prod.nba.com/public/1/content/video/?games={extId}&status=publish&meta-video_creation_source=wsc-feed",
+      "blackoutsFeed": "https://content-api-prod.nba.com/public/1/blackouts/?zip={postalCode}",
+      "__EXTERNAL_CONFIG_BELOW__": "DO NOT MODIFY",
+      "WATCH_BASE_URL": "https://watch.nba.com/",
+      "LOGO_BASE_URL": "https://cdn.nba.com/logos/nba/",
+      "TEAM_LOGO_URL": "https://cdn.nba.com/logos/nba/{teamId}/{local}/L/logo.svg",
+      "TEAM_LOGO_URL_INTL": "http://static.cms.nba.com.s3.amazonaws.com/wp-content/uploads/logos/nba/{teamId}/latest/logo.svg",
+      "CIAM_API_BASE_URL": "https://identity.nba.com/api/v1/",
+      "SUPPORT_URL": "https://support.watch.nba.com/hc/en-us/articles/360057498993",
+      "OPIN_MEDIA_LIB_URL": "https://jssdk.opin.media/9.1.0/opin.min.js",
+      "OPIN_MEDIA_CONFIG": {
+        "mediaProperties": ["blt238db1f620ddbaf3"],
+        "baseURL": "https://nba-api-cdn.opin.media",
+        "sessionType": "cookie",
+        "cookieDomain": ".nba.com",
+        "env": "prod",
+        "workFlow": {
+          "entitlementScreen": true,
+          "analytics": "enabled"
+        }
+      },
+      "PLAYER_EDL_PREFIX": "https://nlnbamdnyc-a.akamaihd.net/fs/nba/feeds_s2019/stats/",
+      "PLAYER_SIXTY_URL": "https://nba.studio.easelive.tv/live/index.html?accountId=nba&projectId=ae4e457d-6094-4444-815a-e4ff1a2e7110",
+      "PLAYER_ACM_APPID": "12b55305-eea3-4ea3-b00a-1a16f4e2632c",
+      "PLAYER_FWCONFIG": {
+        "server": "https://bea4.v.fwmrm.net/ad/g/1",
+        "network": "48804",
+        "locJS": "https://mssl.fwmrm.net/libs/adm/6.22.1/AdManager.js"
+      },
+      "WATCH_PARTY_BASE_URL": "https://watch-party-prod.nba.com/"
+    },
+    "UAT": {
+      "APP_SERVER_CDN_PREFIX": "",
+      "scheduleFeed": "https://nlnbamdnyc-a.akamaihd.net/fs/nba/feeds.qa.nbad/schedule/{date}.js",
+      "epgFeed": "https://content-api-prod.nba.com/public/1/nba-tv/{region}/episodes",
+      "EPG_PUBLIC_KEY": "3082010a0282010100cb83ffd51d9a8ca881688dc56da5e251f848d5e78d1424f2c016fd112c0ab638e21eb7a03360be73b7ab0cbe2899673a4ffa27cb4fca7389faf3cc37a7d3e58eef81adddffa07f4f7cb4873d200b705b63e5bf1b7bf7863e71dd2023e9efc31c1fc82d70bf3209b9416f735c80ddebd23bcf82f48966a23cb329a1e807192b56d1c7e16cc68353641fa301a3b51a88d0a8e4752b4de86f018a4599b270d2f1dbace3d56444ed1510b8c36e094649b3b1f245e2e2864c76ea0c72026f0ed776c1c227f37e954312dfb3f75849a22b03c15261c0a306106d3072d0665d8a03e0487d2ce4b4f4c85252871084ca3a15da502b6de502347f4f54edff15e2ec62899f0203010001",
+      "GAME_SITE_PREFIX": "https://www-prod.nba.com/",
+      "pageNavFeed": {
+        "featured": "https://content-api-prod.nba.com/public/1/endeavor/layout/watch/landing",
+        "nbatv": "https://content-api-prod.nba.com/public/1/endeavor/layout/watch/nbatv",
+        "leaguepass": "https://content-api-prod.nba.com/public/1/endeavor/layout/watch/leaguepass",
+        "classicgames": "https://content-api-prod.nba.com/public/1/endeavor/layout/watch/nba-tv-classic-games"
+      },
+      "videoListFeed": "https://content-api-prod.nba.com/public/1/endeavor/video-list/{curation}/{slug}",
+      "tvShowsFeed": "https://content-api-prod.nba.com/public/1/endeavor/video-list/nba-tv-series",
+      "videoFeed": "https://content-api-prod.nba.com/public/1/endeavor/video/{seoName}",
+      "gameVideoFeed": "https://content-api-prod.nba.com/public/1/content/video/?games={extId}&status=publish&meta-video_creation_source=wsc-feed",
+      "blackoutsFeed": "https://content-api-prod.nba.com/public/1/blackouts/?zip={postalCode}",
+      "__EXTERNAL_CONFIG_BELOW__": "DO NOT MODIFY",
+      "WATCH_BASE_URL": "https://watch-uat.nba.com/",
+      "LOGO_BASE_URL": "https://cdn-uat.nba.com/logos/nba/",
+      "TEAM_LOGO_URL": "https://cdn-uat.nba.com/logos/nba/{teamId}/{local}/L/logo.svg",
+      "TEAM_LOGO_URL_INTL": "http://static.cms.nba.com.s3.amazonaws.com/wp-content/uploads/logos/nba/{teamId}/latest/logo.svg",
+      "CIAM_API_BASE_URL": "https://identity.nba.com/api/v1/",
+      "SUPPORT_URL": "https://support.watch.nba.com/hc/en-us/articles/360057498993",
+      "OPIN_MEDIA_LIB_URL": "https://jssdk.opin.media/9.1.0/opin.min.js",
+      "OPIN_MEDIA_CONFIG": {
+        "mediaProperties": ["blt238db1f620ddbaf3"],
+        "baseURL": "https://nba-api-cdn.opin.media",
+        "sessionType": "cookie",
+        "cookieDomain": ".nba.com",
+        "env": "prod",
+        "workFlow": {
+          "entitlementScreen": true,
+          "analytics": "enabled"
+        }
+      },
+      "PLAYER_EDL_PREFIX": "https://nlnbamdnyc-a.akamaihd.net/fs/nba/feeds_s2019/stats/",
+      "PLAYER_SIXTY_URL": "https://nba.studio.easelive.tv/live/index.html?accountId=staging-nba&projectId=2fe90eb2-3ee9-4221-93d5-e6dd057f176f",
+      "PLAYER_ACM_APPID": "12b55305-eea3-4ea3-b00a-1a16f4e2632c",
+      "PLAYER_FWCONFIG": {
+        "server": "https://bea4.v.fwmrm.net/ad/g/1",
+        "network": "48804",
+        "locJS": "https://mssl.fwmrm.net/libs/adm/6.22.1/AdManager.js"
+      },
+      "WATCH_PARTY_BASE_URL": "https://watch-party-uat.nba.com/"
+    },
+    "QA": {
+      "APP_SERVER_CDN_PREFIX": "https://watchnba-stage.cdnfastly.endeavorstreaming.net/",
+      "scheduleFeed": "https://nlnbamdnyc-a.akamaihd.net/fs/nba/feeds.qa.nbad/schedule/{date}.js",
+      "epgFeed": "https://content-api-qa.nba.com/public/1/nba-tv/{region}/episodes",
+      "EPG_PUBLIC_KEY": "3082010A0282010100DE5D28CD861C3D2C9D83CD09979649E789E79CDB8842C5ED5C24F0907AB7CF56C5BE23C41645864DE09BD118577D7B38A24524C2E897B111DF8E744AF46AC73E306E1970A8CD7187E49F64E2E44696DCDD6615631832587236AC7524838D8DCBA2E430CEB8A1ADA6DB580430F3043ECC662F7BDD2F228E5A406E7100A37D55D9032F709CC45C289569461D50935C48541AB4710074A8218D82A4C4AE16734E3333F596A9287F9AFBF2DFAABD81DDD545C1CFE60409AA1E107A4ADCA997C201856D24986FAD81BF6D66A1E0F8B24F55A5038F6D9FB3B36FA6709812F5C4920AF19034951E326F92D0082431FC1BBCF455C9C704727F155AEECD9400B36611BE8F0203010001",
+      "GAME_SITE_PREFIX": "https://www-qa.nba.com/",
+      "pageNavFeed": {
+        "featured": "https://content-api-qa.nba.com/public/1/endeavor/layout/watch/landing",
+        "nbatv": "https://content-api-qa.nba.com/public/1/endeavor/layout/watch/nbatv",
+        "leaguepass": "https://content-api-qa.nba.com/public/1/endeavor/layout/watch/leaguepass",
+        "classicgames": "https://content-api-qa.nba.com/public/1/endeavor/layout/watch/nba-tv-classic-games"
+      },
+      "videoListFeed": "https://content-api-qa.nba.com/public/1/endeavor/video-list/{curation}/{slug}",
+      "tvShowsFeed": "https://content-api-qa.nba.com/public/1/endeavor/video-list/nba-tv-series",
+      "videoFeed": "https://content-api-qa.nba.com/public/1/endeavor/video/{seoName}",
+      "gameVideoFeed": "https://content-api-qa.nba.com/public/1/content/video/?games={extId}&status=publish&meta-video_creation_source=wsc-feed",
+      "blackoutsFeed": "https://content-api-qa.nba.com/public/1/blackouts/?zip={postalCode}",
+      "__EXTERNAL_CONFIG_BELOW__": "DO NOT MODIFY",
+      "WATCH_BASE_URL": "https://watch-qa.nba.com/",
+      "LOGO_BASE_URL": "https://cdn-qa.nba.com/logos/nba/",
+      "TEAM_LOGO_URL": "https://cdn-qa.nba.com/logos/nba/{teamId}/{local}/L/logo.svg",
+      "TEAM_LOGO_URL_INTL": "http://static.cms.nba.com.s3.amazonaws.com/wp-content/uploads/logos/nba/{teamId}/latest/logo.svg",
+      "CIAM_API_BASE_URL": "https://identity-qa.nba.com/qa/",
+      "SUPPORT_URL": "https://support.watch.nba.com/hc/en-us/articles/360057498993",
+      "OPIN_MEDIA_LIB_URL": "https://stag-jssdk.opin.media/9.1.0/opin.min.js",
+      "OPIN_MEDIA_CONFIG": {
+        "mediaProperties": ["blt6355fd4fe0b3200f"],
+        "baseURL": "https://stag-nba-api-cdn.opin.media",
+        "sessionType": "cookie",
+        "cookieDomain": ".nba.com",
+        "env": "stag",
+        "workFlow": {
+          "entitlementScreen": true,
+          "analytics": "enabled"
+        }
+      },
+      "PLAYER_EDL_PREFIX": "https://nlnbamdnyc-a.akamaihd.net/fs/nba/feeds_s2019/stats/",
+      "PLAYER_SIXTY_URL": "https://nba.studio.easelive.tv/live/index.html?accountId=staging-nba&projectId=2fe90eb2-3ee9-4221-93d5-e6dd057f176f",
+      "PLAYER_ACM_APPID": "12b55305-eea3-4ea3-b00a-1a16f4e2632c",
+      "PLAYER_FWCONFIG": {
+        "server": "https://bea4.v.fwmrm.net/ad/g/1",
+        "network": "48804",
+        "locJS": "https://mssl.fwmrm.net/libs/adm/6.22.1/AdManager.js"
+      },
+      "WATCH_PARTY_BASE_URL": "https://watch-party-qa.nba.com/"
+    },
+    "DEV": {
+      "APP_SERVER_CDN_PREFIX": "https://storage.neulion.net.cn/storage/nba/appserver/",
+      "scheduleFeed": "https://nlnbamdnyc-a.akamaihd.net/fs/nba/feeds.qa.nbad/schedule/{date}.js",
+      "epgFeed": "https://content-api-qa.nba.com/public/1/nba-tv/{region}/episodes",
+      "EPG_PUBLIC_KEY": "3082010A0282010100DE5D28CD861C3D2C9D83CD09979649E789E79CDB8842C5ED5C24F0907AB7CF56C5BE23C41645864DE09BD118577D7B38A24524C2E897B111DF8E744AF46AC73E306E1970A8CD7187E49F64E2E44696DCDD6615631832587236AC7524838D8DCBA2E430CEB8A1ADA6DB580430F3043ECC662F7BDD2F228E5A406E7100A37D55D9032F709CC45C289569461D50935C48541AB4710074A8218D82A4C4AE16734E3333F596A9287F9AFBF2DFAABD81DDD545C1CFE60409AA1E107A4ADCA997C201856D24986FAD81BF6D66A1E0F8B24F55A5038F6D9FB3B36FA6709812F5C4920AF19034951E326F92D0082431FC1BBCF455C9C704727F155AEECD9400B36611BE8F0203010001",
+      "GAME_SITE_PREFIX": "https://www-qa.nba.com/",
+      "pageNavFeed": {
+        "featured": "https://content-api-qa.nba.com/public/1/endeavor/layout/watch/landing",
+        "nbatv": "https://content-api-qa.nba.com/public/1/endeavor/layout/watch/nbatv",
+        "leaguepass": "https://content-api-qa.nba.com/public/1/endeavor/layout/watch/leaguepass",
+        "classicgames": "https://content-api-qa.nba.com/public/1/endeavor/layout/watch/nba-tv-classic-games"
+      },
+      "videoListFeed": "https://content-api-qa.nba.com/public/1/endeavor/video-list/{curation}/{slug}",
+      "tvShowsFeed": "https://content-api-qa.nba.com/public/1/endeavor/video-list/nba-tv-series",
+      "videoFeed": "https://content-api-qa.nba.com/public/1/endeavor/video/{seoName}",
+      "gameVideoFeed": "https://content-api-qa.nba.com/public/1/content/video/?games={extId}&status=publish&meta-video_creation_source=wsc-feed",
+      "blackoutsFeed": "https://content-api-qa.nba.com/public/1/blackouts/?zip={postalCode}",
+      "__EXTERNAL_CONFIG_BELOW__": "DO NOT MODIFY",
+      "WATCH_BASE_URL": "https://nbaddev.nba.com/",
+      "LOGO_BASE_URL": "https://cdn-dev.nba.com/logos/nba/",
+      "TEAM_LOGO_URL": "https://cdn-qa.nba.com/logos/nba/{teamId}/{local}/L/logo.svg",
+      "TEAM_LOGO_URL_INTL": "http://static.cms.nba.com.s3.amazonaws.com/wp-content/uploads/logos/nba/{teamId}/latest/logo.svg",
+      "CIAM_API_BASE_URL": "https://identity-dev.nba.com/dev/",
+      "SUPPORT_URL": "https://support.watch.nba.com/hc/en-us/articles/360057498993",
+      "OPIN_MEDIA_LIB_URL": "https://stag-jssdk.opin.media/9.1.0/opin.min.js",
+      "OPIN_MEDIA_CONFIG": {
+        "mediaProperties": ["blt6355fd4fe0b3200f"],
+        "baseURL": "https://stag-nba-api-cdn.opin.media",
+        "sessionType": "cookie",
+        "cookieDomain": ".nba.com",
+        "env": "stag",
+        "workFlow": {
+          "entitlementScreen": true,
+          "analytics": "enabled"
+        }
+      },
+      "PLAYER_EDL_PREFIX": "https://nlnbamdnyc-a.akamaihd.net/fs/nba/feeds_s2019/stats/",
+      "PLAYER_SIXTY_URL": "https://nba.studio.easelive.tv/live/index.html?accountId=staging-nba&projectId=2fe90eb2-3ee9-4221-93d5-e6dd057f176f",
+      "PLAYER_ACM_APPID": "12b55305-eea3-4ea3-b00a-1a16f4e2632c",
+      "PLAYER_FWCONFIG": {
+        "server": "https://bea4.v.fwmrm.net/ad/g/1",
+        "network": "42448",
+        "locJS": "https://mssl.fwmrm.net/libs/adm/6.22.1/AdManager.js"
+      },
+      "WATCH_PARTY_BASE_URL": "https://watch-party-dev.nba.com/"
+    }
+  },
+  "PLAYER_FW_AD_CONFIG_VIDEO": {
+    "fwId": null,
+    "fwMidrollId": "",
+    "adTag": "nba.com_vod_desktop_video_default",
+    "adTagEmbed": "nba.com_vod_desktop_video_default_article",
+    "adTagNBATV": "nba.com_vod_desktop_nba-tv_web",
+    "adTagAllStar": "nba.com_vod_desktop_allstar",
+    "adTagPlayoffs": "nba.com_vod_desktop_playoffs",
+    "fwFallbackId": "172446858",
+    "fwProfile": "turner_html5_pem"
+  },
+  "PLAYER_FW_AD_CONFIG_CHANNEL": {
+    "fwId": "nba-tv_live_default_asset",
+    "fwMidrollId": "173335512",
+    "adTag": "nba.com_live_nba-tv_web",
+    "fwFallbackId": "173335512",
+    "fwProfile": "turner_html5_pem"
+  },
+  "PLAYER_FW_AD_CONFIG_EVENT": {
+    "fwId": "nba-video/live/live2",
+    "fwMidrollId": "nba-video/live/live2",
+    "adTag": "nba.com_press_conference_live_2",
+    "adTagAllStar": "nba.com_live_dt_nba_tntot_mosaic",
+    "fwFallbackId": "157986297",
+    "fwProfile": "turner_html5_pem"
+  },
+  "PLAYER_FW_AD_CONFIG_PRE_GAME": {
+    "fwId": "nba_league_pass_pregame_video",
+    "fwMidrollId": "0",
+    "adTag": "nba.com_league_pass_desktop_main",
+    "fwFallbackId": "131605628",
+    "fwProfile": "turner_html5_pem"
+  },
+  "NEWSLETTERS": [
+    {
+      "subscription-group": "Daily Newsletter",
+      "id": "dc552b75-ffeb-42aa-a943-e1ac359bf183",
+      "order": 1
+    },
+    {
+      "subscription-group": "G League Emails",
+      "id": "796b571d-9bdd-43b3-a164-fb4b246394f7",
+      "order": 2
+    },
+    {
+      "subscription-group": "JrNBA Emails",
+      "id": "8810f5e2-c7e7-4038-9be4-4cdaf1a9e58c",
+      "order": 3
+    },
+    {
+      "subscription-group": "App updates and League Pass features",
+      "id": "a438893f-1541-4275-83de-2c8dd5dc4381",
+      "order": 4
+    },
+    {
+      "subscription-group": "NBA Offers & Promotions",
+      "id": "c6d82aeb-2e21-48aa-abee-cd5d69ae541d",
+      "order": 5
+    },
+    {
+      "subscription-group": "Weekly Newsletters",
+      "id": "87885a20-16e3-4fdf-8637-61e12abbe949",
+      "order": 6
+    },
+    {
+      "subscription-group": "WNBA Emails",
+      "id": "38f15cb8-4768-42e6-903a-020f42f62215",
+      "order": 7
+    }
+  ],
+  "ADOBE_AE_STAGE_LIB_URL": "https://entitlement.auth-staging.adobe.com/entitlement/v4/AccessEnabler.js",
+  "ADOBE_AE_PROD_LIB_URL": "https://entitlement.auth.adobe.com/entitlement/v4/AccessEnabler.js",
+  "ADOBE_METADATA_KEYS": ["upstreamUserID", "userID"],
+  "ALL_TVE_RESOURCE_IDS": [
+    "NBALP3",
+    "NBATV",
+    "NBATP-LAL",
+    "NBATP-OKC",
+    "NBATP-CLE",
+    "NBATP-IND",
+    "NBATP-MIL",
+    "NBATP-NOP",
+    "NBATP-PHX",
+    "NBATP-MEM",
+    "NBATP-POR",
+    "NBATP-SAS",
+    "NBATP-CHA",
+    "NBATP-GSW",
+    "NBATP-HOU",
+    "NBATP-MIN",
+    "NBATP-ORL",
+    "NBATP-TOR",
+    "NBATP-UTA",
+    "NBATP-BOS",
+    "NBATP-DEN",
+    "NBATP-CHI",
+    "NBATP-MIA",
+    "NBATP-SAC",
+    "NBATP-WAS",
+    "NBATP-BKN",
+    "NBATP-DAL",
+    "NBATP-PHI",
+    "NBATP-ATL",
+    "NBATP-DET",
+    "NBATP-LAC",
+    "NBATP-NYK"
+  ],
+  "MIN_TVE_RESOURCE_IDS": ["NBALP3", "NBATV"],
+  "TEAM_TVE_RESOURCE_IDS": [
+    "NBATP-LAL",
+    "NBATP-OKC",
+    "NBATP-CLE",
+    "NBATP-IND",
+    "NBATP-MIL",
+    "NBATP-NOP",
+    "NBATP-PHX",
+    "NBATP-MEM",
+    "NBATP-POR",
+    "NBATP-SAS",
+    "NBATP-CHA",
+    "NBATP-GSW",
+    "NBATP-HOU",
+    "NBATP-MIN",
+    "NBATP-ORL",
+    "NBATP-TOR",
+    "NBATP-UTA",
+    "NBATP-BOS",
+    "NBATP-DEN",
+    "NBATP-CHI",
+    "NBATP-MIA",
+    "NBATP-SAC",
+    "NBATP-WAS",
+    "NBATP-BKN",
+    "NBATP-DAL",
+    "NBATP-PHI",
+    "NBATP-ATL",
+    "NBATP-DET",
+    "NBATP-LAC",
+    "NBATP-NYK"
+  ],
+  "ENABLE_CHANNEL_DRM": true,
+  "MIN_DURATION_VIDEO_WITH_ADS": 60,
+  "allPlayersFeed": "https://nlnbamdnyc-a.akamaihd.net/fs/nba/feeds_s2012/common/players.js",
+  "playerImgPrefix": "https://nlnbamdnyc-a.akamaihd.net/nba/media/img/players/head/132x132/{playerId}.png",
+  "SEARCH_SIDE_CATEGORY_SEO_NAME": "editors-picks",
+  "CATEGORY_PURCHASE_TYPE_ID": 2,
+  "NBA_TV_CATEGORY_SEO_NAMES": ["nbatv-studio-shows", "nbatv-classic-games"],
+  "LP_CATEGORY_SEO_NAMES": ["league-pass-classic-games"],
+  "LPP_CATEGORY_SEO_NAMES": [],
+  "CUTOFF_SEASON": "2020",
+  "GOOGLE_RECAPTCHA_SITE_KEY": "6Lf706kaAAAAAF2R9e_g82lMgej-fhSDATnD1ZMv",
+  "SURVEY_ANSWERS": [
+    "Google/Bing",
+    "Facebook/Instagram",
+    "Banner Ad",
+    "Ad in Live NBA Game",
+    "NBA.com",
+    "Reddit",
+    "TikTok",
+    "Twitter",
+    "YouTube",
+    "Newsletter",
+    "Other"
+  ],
+  "ALL_STAR_EVENT_CADATA": [
+    {
+      "companion": true,
+      "cat": "Featured",
+      "name": "Backboard Left",
+      "logo": "tntot_icon_backboard.png",
+      "alias": "b",
+      "id": "b",
+      "logos": "tntot_icon_backboard_s.png"
+    },
+    {
+      "companion": true,
+      "cat": "Featured",
+      "name": "Backboard Right",
+      "logo": "tntot_icon_backboard.png",
+      "alias": "centercourt",
+      "id": "57",
+      "logos": "tntot_icon_backboard_s.png"
+    },
+    {
+      "companion": true,
+      "cat": "Featured",
+      "name": "Mosaic",
+      "logo": "tntot_icon_mosaic.png",
+      "alias": "backcourt",
+      "id": "59",
+      "logos": "tntot_icon_mosaic_s.png"
+    },
+    {
+      "companion": true,
+      "cat": "Featured",
+      "name": "Player Cam 1",
+      "logo": "tntot.png",
+      "alias": "global",
+      "id": "60",
+      "logos": "tntot_s.png"
+    },
+    {
+      "companion": true,
+      "cat": "Featured",
+      "name": "Player Cam 2",
+      "logo": "tntot.png",
+      "alias": "frontcourt",
+      "id": "58",
+      "logos": "tntot_s.png"
+    }
+  ],
+  "teams": {
+    "ATL": {
+      "code": "ATL",
+      "city": "Atlanta",
+      "name": "Hawks",
+      "division": "Southeast",
+      "conference": "Eastern",
+      "color": "#E13A3E",
+      "id": "1610612737"
+    },
+    "BKN": {
+      "code": "BKN",
+      "city": "Brooklyn",
+      "name": "Nets",
+      "division": "Atlantic",
+      "conference": "Eastern",
+      "color": "#000000",
+      "id": "1610612751"
+    },
+    "BOS": {
+      "code": "BOS",
+      "city": "Boston",
+      "name": "Celtics",
+      "division": "Atlantic",
+      "conference": "Eastern",
+      "color": "#007239",
+      "id": "1610612738"
+    },
+    "CHA": {
+      "code": "CHA",
+      "city": "Charlotte",
+      "name": "Hornets",
+      "division": "Southeast",
+      "conference": "Eastern",
+      "color": "#00788C",
+      "id": "1610612766"
+    },
+    "CHI": {
+      "code": "CHI",
+      "city": "Chicago",
+      "name": "Bulls",
+      "division": "Central",
+      "conference": "Eastern",
+      "color": "#C60033",
+      "id": "1610612741"
+    },
+    "CLE": {
+      "code": "CLE",
+      "city": "Cleveland",
+      "name": "Cavaliers",
+      "division": "Central",
+      "conference": "Eastern",
+      "color": "#B2004A",
+      "id": "1610612739"
+    },
+    "DAL": {
+      "code": "DAL",
+      "city": "Dallas",
+      "name": "Mavericks",
+      "division": "Southwest",
+      "conference": "Western",
+      "color": "#0064B1",
+      "id": "1610612742"
+    },
+    "DEN": {
+      "code": "DEN",
+      "city": "Denver",
+      "name": "Nuggets",
+      "division": "Northwest",
+      "conference": "Western",
+      "color": "#0E2240",
+      "id": "1610612743"
+    },
+    "DET": {
+      "code": "DET",
+      "city": "Detroit",
+      "name": "Pistons",
+      "division": "Central",
+      "conference": "Eastern",
+      "color": "#1D428A",
+      "id": "1610612765"
+    },
+    "GSW": {
+      "code": "GSW",
+      "city": "Golden State",
+      "name": "Warriors",
+      "division": "Pacific",
+      "conference": "Western",
+      "color": "#1D428A",
+      "id": "1610612744"
+    },
+    "HOU": {
+      "code": "HOU",
+      "city": "Houston",
+      "name": "Rockets",
+      "division": "Southwest",
+      "conference": "Western",
+      "color": "#CE1141",
+      "id": "1610612745"
+    },
+    "IND": {
+      "code": "IND",
+      "city": "Indiana",
+      "name": "Pacers",
+      "division": "Central",
+      "conference": "Eastern",
+      "color": "#002D62",
+      "id": "1610612754"
+    },
+    "LAC": {
+      "code": "LAC",
+      "city": "LA",
+      "name": "LA Clippers",
+      "division": "Pacific",
+      "conference": "Western",
+      "color": "#C8102E",
+      "id": "1610612746"
+    },
+    "LAL": {
+      "code": "LAL",
+      "city": "Los Angeles",
+      "name": "Lakers",
+      "division": "Pacific",
+      "conference": "Western",
+      "color": "#552583",
+      "id": "1610612747"
+    },
+    "MEM": {
+      "code": "MEM",
+      "city": "Memphis",
+      "name": "Grizzlies",
+      "division": "Southwest",
+      "conference": "Western",
+      "color": "#5D76A9",
+      "id": "1610612763"
+    },
+    "MIA": {
+      "code": "MIA",
+      "city": "Miami",
+      "name": "Heat",
+      "division": "Southeast",
+      "conference": "Eastern",
+      "color": "#98002E",
+      "id": "1610612748"
+    },
+    "MIL": {
+      "code": "MIL",
+      "city": "Milwaukee",
+      "name": "Bucks",
+      "division": "Central",
+      "conference": "Eastern",
+      "color": "#00471B",
+      "id": "1610612749"
+    },
+    "MIN": {
+      "code": "MIN",
+      "city": "Minnesota",
+      "name": "Timberwolves",
+      "division": "Northwest",
+      "conference": "Western",
+      "color": "#0C2340",
+      "id": "1610612750"
+    },
+    "NJN": {
+      "code": "NJN",
+      "city": "New Jersey",
+      "name": "Nets",
+      "division": "",
+      "conference": "",
+      "color": "#C60033"
+    },
+    "NOH": {
+      "code": "NOH",
+      "city": "New Orleans",
+      "name": "Hornets",
+      "division": "",
+      "conference": "",
+      "color": "#008FC5"
+    },
+    "NOP": {
+      "code": "NOP",
+      "city": "New Orleans",
+      "name": "Pelicans",
+      "division": "Southwest",
+      "conference": "Western",
+      "color": "#002B5C",
+      "id": "1610612740"
+    },
+    "NYK": {
+      "code": "NYK",
+      "city": "New York",
+      "name": "Knicks",
+      "division": "Atlantic",
+      "conference": "Eastern",
+      "color": "#006BB6",
+      "id": "1610612752"
+    },
+    "OKC": {
+      "code": "OKC",
+      "city": "Oklahoma City",
+      "name": "Thunder",
+      "division": "Northwest",
+      "conference": "Western",
+      "color": "#007AC1",
+      "id": "1610612760"
+    },
+    "ORL": {
+      "code": "ORL",
+      "city": "Orlando",
+      "name": "Magic",
+      "division": "Southeast",
+      "conference": "Eastern",
+      "color": "#006BB7",
+      "id": "1610612753"
+    },
+    "PHI": {
+      "code": "PHI",
+      "city": "Philadelphia",
+      "name": "76ers",
+      "division": "Atlantic",
+      "conference": "Eastern",
+      "color": "#006BB6",
+      "id": "1610612755"
+    },
+    "PHX": {
+      "code": "PHX",
+      "city": "Phoenix",
+      "name": "Suns",
+      "division": "Pacific",
+      "conference": "Western",
+      "color": "#1D1160",
+      "id": "1610612756"
+    },
+    "POR": {
+      "code": "POR",
+      "city": "Portland",
+      "name": "Trail Blazers",
+      "division": "Northwest",
+      "conference": "Western",
+      "color": "#DE2032",
+      "id": "1610612757"
+    },
+    "SAC": {
+      "code": "SAC",
+      "city": "Sacramento",
+      "name": "Kings",
+      "division": "Pacific",
+      "conference": "Western",
+      "color": "#5B2B82",
+      "id": "1610612758"
+    },
+    "SAS": {
+      "code": "SAS",
+      "city": "San Antonio",
+      "name": "Spurs",
+      "division": "Southwest",
+      "conference": "Western",
+      "color": "#000000",
+      "id": "1610612759"
+    },
+    "TOR": {
+      "code": "TOR",
+      "city": "Toronto",
+      "name": "Raptors",
+      "division": "Atlantic",
+      "conference": "Eastern",
+      "color": "#CE1141",
+      "id": "1610612761"
+    },
+    "UTA": {
+      "code": "UTA",
+      "city": "Utah",
+      "name": "Jazz",
+      "division": "Northwest",
+      "conference": "Western",
+      "color": "#002B5C",
+      "id": "1610612762"
+    },
+    "WAS": {
+      "code": "WAS",
+      "city": "Washington",
+      "name": "Wizards",
+      "division": "Southeast",
+      "conference": "Eastern",
+      "color": "#002B5C",
+      "id": "1610612764"
+    },
+    "EST": {
+      "code": "EST",
+      "city": "All-Star",
+      "name": "East",
+      "division": "",
+      "conference": "",
+      "color": "#00559A"
+    },
+    "WST": {
+      "code": "WST",
+      "city": "All-Star",
+      "name": "West",
+      "division": "",
+      "conference": "",
+      "color": "#EC003D"
+    },
+    "CHK": {
+      "code": "CHK",
+      "city": "Rising Stars",
+      "name": "Team Chuck",
+      "division": "",
+      "conference": "",
+      "color": "#FCB034"
+    },
+    "SHQ": {
+      "code": "SHQ",
+      "city": "Rising Stars",
+      "name": "Team Shaq",
+      "division": "",
+      "conference": "",
+      "color": "#0077C0"
+    },
+    "HIL": {
+      "code": "HIL",
+      "city": "Rising Stars",
+      "name": "Team Hill",
+      "division": "",
+      "conference": "",
+      "color": "#FBAF33"
+    },
+    "WEB": {
+      "code": "WEB",
+      "city": "Rising Stars",
+      "name": "Team Webber",
+      "division": "",
+      "conference": "",
+      "color": "#00529B"
+    },
+    "USA": {
+      "code": "USA",
+      "city": "All Stars",
+      "name": "Team USA",
+      "division": "",
+      "conference": "",
+      "color": "#7AA3DB"
+    },
+    "WLD": {
+      "code": "WLD",
+      "city": "All Stars",
+      "name": "Team World",
+      "division": "",
+      "conference": "",
+      "color": "#373936"
+    },
+    "ACC": {
+      "code": "ACC",
+      "city": "Celebrity",
+      "name": "Canada",
+      "division": "",
+      "conference": "",
+      "color": "#EC003D"
+    },
+    "ACU": {
+      "code": "ACU",
+      "city": "Celebrity",
+      "name": "USA",
+      "division": "",
+      "conference": "",
+      "color": "#00559A"
+    },
+    "ALB": {
+      "code": "ALB",
+      "city": "Berlin",
+      "name": "ALBA",
+      "division": "",
+      "conference": "",
+      "color": "#0063AF",
+      "isintl": true
+    },
+    "EAM": {
+      "code": "EAM",
+      "city": "Milan",
+      "name": "EA7",
+      "division": "",
+      "conference": "",
+      "color": "#000000",
+      "isintl": true
+    },
+    "FBU": {
+      "code": "FBU",
+      "city": "Istanbul",
+      "name": "Fenerbahce Ulker",
+      "division": "",
+      "conference": "",
+      "color": "#ED1940",
+      "isintl": true
+    },
+    "MPS": {
+      "code": "MPS",
+      "city": "Siena",
+      "name": "Montepaschi Siena",
+      "division": "",
+      "conference": "",
+      "color": "#007239",
+      "isintl": true
+    },
+    "RMD": {
+      "code": "RMD",
+      "city": "Madrid",
+      "name": "Real Madrid",
+      "division": "",
+      "conference": "",
+      "color": "#006BB7",
+      "isintl": true
+    },
+    "FCB": {
+      "code": "FCB",
+      "city": "Barcelona",
+      "name": "FC Barcelona",
+      "division": "",
+      "conference": "",
+      "color": "#446893",
+      "isintl": true
+    },
+    "MAC": {
+      "code": "MAC",
+      "city": "Haifa",
+      "name": "Maccabi Haifa",
+      "division": "",
+      "conference": "",
+      "color": "#155D30",
+      "isintl": true
+    },
+    "UBB": {
+      "code": "UBB",
+      "city": "Bilbao",
+      "name": "Bilbao Basket",
+      "division": "",
+      "conference": "",
+      "color": "#808284",
+      "isintl": true
+    },
+    "MOS": {
+      "code": "MOS",
+      "city": "Moscow",
+      "name": "CSKA Moscow",
+      "division": "",
+      "conference": "",
+      "color": "#023E88",
+      "isintl": true
+    },
+    "DLS": {
+      "code": "DLS",
+      "city": "G League",
+      "name": "G League Select",
+      "division": "",
+      "conference": "",
+      "color": "#ED174C",
+      "isintl": true
+    },
+    "MTA": {
+      "code": "MTA",
+      "city": "Tel Aviv",
+      "name": "Maccabi Electra",
+      "division": "",
+      "conference": "",
+      "color": "#0281B6",
+      "isintl": true
+    },
+    "FLA": {
+      "code": "FLA",
+      "city": "Flamengo",
+      "name": "Flamengo",
+      "division": "",
+      "conference": "",
+      "color": "#D13138",
+      "isintl": true
+    },
+    "CHB": {
+      "code": "CHB",
+      "city": "Charlotte",
+      "name": "Bobcats",
+      "division": "",
+      "conference": "",
+      "color": "#F24D28"
+    },
+    "ORB": {
+      "code": "ORB",
+      "city": "Orlando",
+      "name": "Magic Blue",
+      "division": "",
+      "conference": "",
+      "color": "#006BB7"
+    },
+    "ORW": {
+      "code": "ORW",
+      "city": "Orlando",
+      "name": "Magic White",
+      "division": "",
+      "conference": "",
+      "color": "#006BB7"
+    },
+    "ATW": {
+      "code": "ATW",
+      "city": "World",
+      "name": "Team World",
+      "division": "",
+      "conference": "",
+      "color": "#F1B80F",
+      "isintl": true
+    },
+    "ATA": {
+      "code": "ATA",
+      "city": "Africa",
+      "name": "Team Africa",
+      "division": "",
+      "conference": "",
+      "color": "#10A44B",
+      "isintl": true
+    },
+    "USB": {
+      "code": "USB",
+      "city": "USAB",
+      "name": "USAB Blue",
+      "division": "",
+      "conference": "",
+      "color": "#E21836"
+    },
+    "USW": {
+      "code": "USW",
+      "city": "USAB",
+      "name": "USAB White",
+      "division": "",
+      "conference": "",
+      "color": "#E21836"
+    },
+    "MLN": {
+      "code": "MLN",
+      "city": "Milano",
+      "name": "Olimpia Milano",
+      "division": "",
+      "conference": "",
+      "color": "#E31D1A",
+      "isintl": true
+    },
+    "BAU": {
+      "code": "BAU",
+      "city": "Bauru",
+      "name": "Paschoalotto/Bauru",
+      "division": "",
+      "conference": "",
+      "color": "#0E9E48",
+      "isintl": true
+    },
+    "CHN": {
+      "code": "CHN",
+      "city": "China",
+      "name": "China",
+      "division": "",
+      "conference": "",
+      "color": "#E40013",
+      "isintl": true
+    },
+    "ARG": {
+      "code": "ARG",
+      "city": "Argentina",
+      "name": "Argentina",
+      "division": "",
+      "conference": "",
+      "color": "#9EDBF6",
+      "isintl": true
+    },
+    "VEN": {
+      "code": "VEN",
+      "city": "Venezuela",
+      "name": "Venezuela",
+      "division": "",
+      "conference": "",
+      "color": "#6E1200",
+      "isintl": true
+    },
+    "NGR": {
+      "code": "NGR",
+      "city": "Nigeria",
+      "name": "Nigeria",
+      "division": "",
+      "conference": "",
+      "color": "#166645",
+      "isintl": true
+    },
+    "SDS": {
+      "code": "SDS",
+      "city": "Shanghai",
+      "name": "Sharks",
+      "division": "",
+      "conference": "",
+      "color": "#AF2B2E",
+      "isintl": true
+    },
+    "SLA": {
+      "code": "SLA",
+      "city": "San Lorenzo",
+      "name": "San Lorenzo",
+      "division": "",
+      "conference": "",
+      "color": "#005096",
+      "isintl": true
+    },
+    "AFR": {
+      "code": "AFR",
+      "city": "Africa",
+      "name": "Team Africa",
+      "division": "",
+      "conference": "",
+      "color": "#10A44B",
+      "isintl": true
+    },
+    "BNE": {
+      "code": "BNE",
+      "city": "Brisbane",
+      "name": "Bullets",
+      "division": "",
+      "conference": "",
+      "color": "#002D73",
+      "isintl": true
+    },
+    "MEL": {
+      "code": "MEL",
+      "city": "Melbourne",
+      "name": "United",
+      "division": "",
+      "conference": "",
+      "color": "#1C1F2A",
+      "isintl": true
+    },
+    "SYD": {
+      "code": "SYD",
+      "city": "Sydney",
+      "name": "Kings",
+      "division": "",
+      "conference": "",
+      "color": "#5B4097",
+      "isintl": true
+    },
+    "GUA": {
+      "code": "GUA",
+      "city": "Guangzhou",
+      "name": "Long-Lions",
+      "division": "",
+      "conference": "",
+      "color": "#151F42",
+      "isintl": true
+    },
+    "LBN": {
+      "code": "LBN",
+      "city": "All Stars",
+      "name": "Team LeBron",
+      "division": "",
+      "conference": "",
+      "color": "#000000",
+      "id": "1610616834"
+    },
+    "DRT": {
+      "code": "DRT",
+      "city": "All Stars",
+      "name": "Team Durant",
+      "division": "",
+      "conference": "",
+      "color": "#000000",
+      "id": "1610616833"
+    },
+    "STP": {
+      "code": "STP",
+      "city": "All Stars",
+      "name": "Team Stephen",
+      "division": "",
+      "conference": "",
+      "color": "#000000"
+    },
+    "GNS": {
+      "code": "GNS",
+      "city": "All Stars",
+      "name": "Team Giannis",
+      "division": "",
+      "conference": "",
+      "color": "#221F1F"
+    },
+    "ADL": {
+      "code": "ADL",
+      "city": "Adelaide",
+      "name": "36ers",
+      "division": "",
+      "conference": "",
+      "color": "#061030",
+      "isintl": true
+    },
+    "BJD": {
+      "code": "BJD",
+      "city": "Beijing",
+      "name": "Ducks",
+      "division": "",
+      "conference": "",
+      "color": "#0B6AAB",
+      "isintl": true
+    },
+    "NZB": {
+      "code": "NZB",
+      "city": "New Zealand",
+      "name": "Breakers",
+      "division": "",
+      "conference": "",
+      "color": "#003E7A",
+      "isintl": true
+    },
+    "PER": {
+      "code": "PER",
+      "city": "Perth",
+      "name": "Wildcats",
+      "division": "",
+      "conference": "",
+      "color": "#ED1C24",
+      "isintl": true
+    },
+    "CRO": {
+      "code": "CRO",
+      "city": "Croatia",
+      "name": "Croatia",
+      "division": "",
+      "conference": "",
+      "color": "#CC0000",
+      "isintl": true
+    },
+    "FRA": {
+      "code": "FRA",
+      "city": "Franca",
+      "name": "Franca",
+      "division": "",
+      "conference": "",
+      "color": "#1D335A",
+      "isintl": true
+    },
+    "UTB": {
+      "code": "UTB",
+      "city": "Utah",
+      "name": "Utah Jazz Blue",
+      "division": "",
+      "conference": ""
+    },
+    "UTW": {
+      "code": "UTW",
+      "city": "Utah",
+      "name": "Utah Jazz White",
+      "division": "",
+      "conference": ""
+    },
+    "BAR": {
+      "code": "BAR",
+      "city": "",
+      "name": "Team Barry",
+      "division": "",
+      "conference": "",
+      "id": "1610616847"
+    },
+    "PAY": {
+      "code": "PAY",
+      "city": "",
+      "name": "Team Payton",
+      "division": "",
+      "conference": "",
+      "id": "1610616848"
+    },
+    "IAH": {
+      "code": "IAH",
+      "city": "",
+      "name": "Team Isiah",
+      "division": "",
+      "conference": "",
+      "id": "1610616849"
+    },
+    "WOR": {
+      "code": "WOR",
+      "city": "",
+      "name": "Team Worthy",
+      "division": "",
+      "conference": "",
+      "id": "1610616850"
+    },
+    "NIQ": {
+      "code": "NIQ",
+      "city": "",
+      "name": "Team Nique",
+      "division": "",
+      "conference": "",
+      "id": "1610616839"
+    },
+    "WAL": {
+      "code": "WAL",
+      "city": "",
+      "name": "Team Walton",
+      "division": "",
+      "conference": "",
+      "id": "1610616840"
+    }
+  }
+}

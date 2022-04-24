@@ -1,0 +1,84 @@
+query TodaysScoreBoard {
+  todaysScoreBoard {
+    gameDate
+    leagueId
+    leagueName
+    games {
+      gameId
+      gameCode
+      gameStatus
+      gameStatusText
+      period
+      gameClock
+      gameTimeUTC
+      regulationPeriods
+      ifNecessary
+      gameEt
+      seriesGameNumber
+      seriesText
+      homeTeam {
+        periods {
+          score
+          periodType
+          period
+        }
+        teamId
+        teamName
+        teamCity
+        wins
+        losses
+        teamTricode
+        score
+        seed
+        inBonus
+        timeoutsRemaining
+      }
+      awayTeam {
+        periods {
+          score
+          periodType
+          period
+        }
+        teamName
+        teamId
+        teamCity
+        teamTricode
+        wins
+        losses
+        score
+        seed
+        inBonus
+        timeoutsRemaining
+      }
+      gameLeaders {
+        awayLeaders {
+          personId
+          name
+          jerseyNum
+          position
+          teamTricode
+          playerSlug
+          points
+          rebounds
+          assists
+        }
+        homeLeaders {
+          personId
+          name
+          jerseyNum
+          position
+          teamTricode
+          playerSlug
+          rebounds
+          points
+          assists
+        }
+      }
+      pbOdds {
+        suspended
+        odds
+        team
+      }
+    }
+  }
+}
