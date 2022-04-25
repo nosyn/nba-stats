@@ -12,7 +12,7 @@ const TeamScore = ({ team }: TeamScoreProps) => {
 
   return (
     <Group noWrap>
-      <Avatar src={logoURL} radius="xl" />
+      <Avatar src={logoURL} alt="team-logo" radius="xl" />
 
       <Box style={{ flex: 1 }}>
         <Text size="sm" weight={500}>
@@ -20,7 +20,7 @@ const TeamScore = ({ team }: TeamScoreProps) => {
         </Text>
       </Box>
 
-      {score}
+      <Text>{score}</Text>
     </Group>
   );
 };
