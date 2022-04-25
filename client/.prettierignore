@@ -5,3 +5,5 @@ yarn.lock
 build
 node_modules
 public
+generated
+coverage

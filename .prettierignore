@@ -5,3 +5,5 @@ node_modules
 public
 coverage
 dist
+generated
+coverage
