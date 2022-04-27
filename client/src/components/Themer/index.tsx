@@ -3,7 +3,7 @@ import {
   ColorSchemeProvider,
   MantineProvider,
 } from "@mantine/core";
-import AppShell from "../AppShell";
+import Layout from "../Layout";
 import { ReactNode } from "react";
 import { useHotkeys, useLocalStorage } from "@mantine/hooks";
 
@@ -34,7 +34,7 @@ const MainLayout = ({ children }: MainLayout) => {
         withNormalizeCSS
         withGlobalStyles
       >
-        <AppShell>{children}</AppShell>
+        <Layout>{children}</Layout>
       </MantineProvider>
     </ColorSchemeProvider>
   );

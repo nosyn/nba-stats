@@ -1,5 +1,5 @@
 import LiveScoreBoards from "./widgets/ScoreBoard/LiveScoreBoards";
-import MainLayout from "./Layout/MainLayout";
+import Themer from "./Themer";
 
 // GraphQL
 import { ApolloProvider } from "@apollo/client";
@@ -8,9 +8,9 @@ import client from "../graphql/client";
 const App = () => {
   return (
     <ApolloProvider client={client}>
-      <MainLayout>
+      <Themer>
         <LiveScoreBoards />
-      </MainLayout>
+      </Themer>
     </ApolloProvider>
   );
 };
