@@ -1,8 +1,8 @@
 import TeamScore from "../TeamScore";
 import { render, screen } from "@testing-library/react";
-import { Team } from "../../../graphql/generated/graphql";
-import { todaysScoreBoard } from "../../../../__mocks__";
-import getTeamLogoURL from "../../../utils/getTeamLogoURL";
+import { Team } from "../../../../graphql/generated/graphql";
+import { todaysScoreBoard } from "../../../../../__mocks__";
+import getTeamLogoURL from "../../../../utils/getTeamLogoURL";
 
 const teamMock = todaysScoreBoard.games[0].homeTeam;
 

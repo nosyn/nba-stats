@@ -1,5 +1,5 @@
-import { Box, SimpleGrid, Text } from "@mantine/core";
-import { useTodaysScoreBoardQuery } from "../../graphql/generated/graphql";
+import { Container, SimpleGrid, Text } from "@mantine/core";
+import { useTodaysScoreBoardQuery } from "../../../graphql/generated/graphql";
 import GameStatus from "./GameStatus";
 
 const LiveScoreBoards = () => {
@@ -16,7 +16,7 @@ const LiveScoreBoards = () => {
   if (!games || games?.length <= 0) return <div>No game at the moment</div>;
 
   return (
-    <Box>
+    <Container>
       <Text>Today: {data.todaysScoreBoard.gameDate}</Text>
       <SimpleGrid
         cols={2}
@@ -26,7 +26,7 @@ const LiveScoreBoards = () => {
           game ? <GameStatus game={game} key={`game-${game.gameId}`} /> : null
         )}
       </SimpleGrid>
-    </Box>
+    </Container>
   );
 };
 

@@ -1,5 +1,5 @@
 import { Box, Card, Divider, Group, Loader, Text } from "@mantine/core";
-import { Game } from "../../graphql/generated/graphql";
+import { Game } from "../../../graphql/generated/graphql";
 import TeamScore from "./TeamScore";
 
 interface GameStatusProps {

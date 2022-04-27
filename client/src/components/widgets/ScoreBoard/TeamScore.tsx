@@ -1,6 +1,6 @@
 import { Group, Avatar, Text, Box } from "@mantine/core";
-import { Team } from "../../graphql/generated/graphql";
-import getTeamLogoURL from "../../utils/getTeamLogoURL";
+import { Team } from "../../../graphql/generated/graphql";
+import getTeamLogoURL from "../../../utils/getTeamLogoURL";
 
 interface TeamScoreProps {
   team: Team;

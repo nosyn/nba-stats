@@ -1,11 +1,17 @@
-import { Container } from "@mantine/core";
-import LiveScoreBoards from "./ScoreBoard/LiveScoreBoards";
+import LiveScoreBoards from "./widgets/ScoreBoard/LiveScoreBoards";
+import MainLayout from "./Layout/MainLayout";
+
+// GraphQL
+import { ApolloProvider } from "@apollo/client";
+import client from "../graphql/client";
 
 const App = () => {
   return (
-    <Container>
-      <LiveScoreBoards />
-    </Container>
+    <ApolloProvider client={client}>
+      <MainLayout>
+        <LiveScoreBoards />
+      </MainLayout>
+    </ApolloProvider>
   );
 };
 
