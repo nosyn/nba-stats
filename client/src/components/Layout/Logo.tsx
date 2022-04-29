@@ -1,10 +1,10 @@
 import { Group, Text } from "@mantine/core";
-import { BallBasketball } from "tabler-icons-react";
+import { Dashboard } from "tabler-icons-react";
 
 const Logo = () => {
   return (
     <Group spacing="sm">
-      <BallBasketball size={32} strokeWidth={2} color={"#F88158"} />
+      <Dashboard size={32} strokeWidth={2} color="orange" />
       <Text
         component="span"
         align="center"
