@@ -45,9 +45,9 @@ const Layout = ({ children }: LayoutType) => {
           <Navbar.Section grow mt="xs">
             <MainLinks />
           </Navbar.Section>
-          <Navbar.Section>
+          {/* <Navbar.Section>
             <User />
-          </Navbar.Section>
+          </Navbar.Section> */}
         </Navbar>
       }
       header={

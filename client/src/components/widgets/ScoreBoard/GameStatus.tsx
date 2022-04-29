@@ -66,7 +66,7 @@ const GameStatus = ({ game }: GameStatusProps) => {
             size="sm"
             sx={(theme) => ({
               color: isFinal
-                ? theme.colors.dark
+                ? theme.colors.dark[theme.colorScheme === "dark" ? 0 : 9]
                 : isPlaying
                 ? theme.colors.green
                 : theme.colors.blue[5],

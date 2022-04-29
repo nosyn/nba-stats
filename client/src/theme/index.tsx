@@ -13,9 +13,11 @@ import { NotificationsProvider } from "@mantine/notifications";
 // Override theme
 import customTheme from "./customTheme";
 
-type Theme = { children: ReactNode };
+// React router
+// https://reactrouter.com/docs/en/v6/getting-started/concepts#outlets
+import { Outlet } from "react-router-dom";
 
-const Theme = ({ children }: Theme) => {
+const Theme = () => {
   const [colorScheme, setColorScheme] = useLocalStorage<ColorScheme>({
     key: "mantine-color-scheme",
     defaultValue: "light",
@@ -38,7 +40,9 @@ const Theme = ({ children }: Theme) => {
         withGlobalStyles
       >
         <NotificationsProvider>
-          <Layout>{children}</Layout>
+          <Layout>
+            <Outlet />
+          </Layout>
         </NotificationsProvider>
       </MantineProvider>
     </ColorSchemeProvider>
