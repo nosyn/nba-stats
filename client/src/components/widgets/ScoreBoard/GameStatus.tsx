@@ -15,8 +15,13 @@ const GameStatus = ({ game }: GameStatusProps) => {
       p="sm"
       sx={(theme) => ({
         ":hover": {
-          backgroundColor: theme.colors.gray[1],
+          backgroundColor:
+            theme.colorScheme === "dark"
+              ? theme.colors.dark[6]
+              : theme.colors.gray[0],
         },
+        backgroundColor:
+          theme.colorScheme === "dark" ? theme.colors.dark[7] : theme.white,
       })}
       withBorder
       shadow="xs"

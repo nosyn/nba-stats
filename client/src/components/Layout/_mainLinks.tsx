@@ -1,9 +1,10 @@
 import React from "react";
 import {
-  GitPullRequest,
   AlertCircle,
   Messages,
   Database,
+  BallBasketball,
+  SoccerField,
 } from "tabler-icons-react";
 import { ThemeIcon, UnstyledButton, Group, Text } from "@mantine/core";
 
@@ -44,8 +45,12 @@ function MainLink({ icon, color, label }: MainLinkProps) {
 }
 
 const data = [
-  { icon: <GitPullRequest size={16} />, color: "blue", label: "Pull Requests" },
-  { icon: <AlertCircle size={16} />, color: "teal", label: "Open Issues" },
+  {
+    icon: <BallBasketball size={16} />,
+    color: "orange",
+    label: "Basket Ball",
+  },
+  { icon: <SoccerField size={16} />, color: "blue", label: "Soccer" },
   { icon: <Messages size={16} />, color: "violet", label: "Discussions" },
   { icon: <Database size={16} />, color: "grape", label: "Databases" },
 ];
