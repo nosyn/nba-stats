@@ -9,6 +9,7 @@ import { useHotkeys, useLocalStorage } from "@mantine/hooks";
 
 // Override theme
 import theme from "../../theme";
+import { NotificationsProvider } from "@mantine/notifications";
 
 type MainLayout = { children: ReactNode };
 
@@ -34,7 +35,9 @@ const MainLayout = ({ children }: MainLayout) => {
         withNormalizeCSS
         withGlobalStyles
       >
-        <Layout>{children}</Layout>
+        <NotificationsProvider>
+          <Layout>{children}</Layout>
+        </NotificationsProvider>
       </MantineProvider>
     </ColorSchemeProvider>
   );
