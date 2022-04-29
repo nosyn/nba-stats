@@ -3,17 +3,19 @@ import {
   ColorSchemeProvider,
   MantineProvider,
 } from "@mantine/core";
-import Layout from "../Layout";
+import Layout from "../components/Layout";
 import { ReactNode } from "react";
 import { useHotkeys, useLocalStorage } from "@mantine/hooks";
 
-// Override theme
-import theme from "../../theme";
+// Notification
 import { NotificationsProvider } from "@mantine/notifications";
 
-type MainLayout = { children: ReactNode };
+// Override theme
+import customTheme from "./customTheme";
 
-const MainLayout = ({ children }: MainLayout) => {
+type Theme = { children: ReactNode };
+
+const Theme = ({ children }: Theme) => {
   const [colorScheme, setColorScheme] = useLocalStorage<ColorScheme>({
     key: "mantine-color-scheme",
     defaultValue: "light",
@@ -31,7 +33,7 @@ const MainLayout = ({ children }: MainLayout) => {
       toggleColorScheme={toggleColorScheme}
     >
       <MantineProvider
-        theme={{ ...theme, colorScheme }}
+        theme={{ ...customTheme, colorScheme }}
         withNormalizeCSS
         withGlobalStyles
       >
@@ -43,4 +45,4 @@ const MainLayout = ({ children }: MainLayout) => {
   );
 };
 
-export default MainLayout;
+export default Theme;
