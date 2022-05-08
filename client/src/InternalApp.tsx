@@ -4,7 +4,6 @@ import { Routes, Route } from "react-router-dom";
 import BasketBallPage from "./pages/BasketBallPage";
 import DatabasesPage from "./pages/DatabasesPage";
 import HomePage from "./pages/HomePage";
-import SoccerPage from "./pages/SoccerPage";
 
 // Themer
 import Themer from "./theme";
@@ -16,9 +15,9 @@ const InternalApp = ({}: InternalAppProps) => {
     <Routes>
       <Route path="/" element={<Themer />}>
         <Route index element={<HomePage />} />
-        <Route path="basketball" element={<BasketBallPage />} />
-        <Route path="soccer" element={<SoccerPage />} />
-        <Route path="databases" element={<DatabasesPage />} />
+        <Route path="home" element={<BasketBallPage />} />
+        <Route path="tables" element={<DatabasesPage />} />
+        <Route path="*" element={<HomePage />} />
       </Route>
     </Routes>
   );

@@ -9,7 +9,7 @@ const typeDefs = gql`
     gameDate: String!
     leagueId: String!
     leagueName: String!
-    games: [Game]!
+    games: [Game!]!
   }
 
   type Game {
@@ -42,7 +42,7 @@ const typeDefs = gql`
     seed: Int!
     inBonus: Int
     timeoutsRemaining: Int!
-    periods: [Period]!
+    periods: [Period!]!
   }
 
   type GameLeaders {

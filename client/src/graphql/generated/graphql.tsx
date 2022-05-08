@@ -77,7 +77,7 @@ export type Team = {
   __typename?: 'Team';
   inBonus?: Maybe<Scalars['Int']>;
   losses: Scalars['Int'];
-  periods: Array<Maybe<Period>>;
+  periods: Array<Period>;
   score: Scalars['Int'];
   seed: Scalars['Int'];
   teamCity: Scalars['String'];
@@ -91,7 +91,7 @@ export type Team = {
 export type TodaysScoreBoard = {
   __typename?: 'TodaysScoreBoard';
   gameDate: Scalars['String'];
-  games: Array<Maybe<Game>>;
+  games: Array<Game>;
   leagueId: Scalars['String'];
   leagueName: Scalars['String'];
 };
@@ -99,7 +99,7 @@ export type TodaysScoreBoard = {
 export type TodaysScoreBoardQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type TodaysScoreBoardQuery = { __typename?: 'Query', todaysScoreBoard: { __typename?: 'TodaysScoreBoard', gameDate: string, leagueId: string, leagueName: string, games: Array<{ __typename?: 'Game', gameId: string, gameCode: string, gameStatus: number, gameStatusText: string, period: number, gameClock: string, gameTimeUTC: string, regulationPeriods: number, ifNecessary: boolean, gameEt: string, seriesGameNumber: string, seriesText: string, homeTeam: { __typename?: 'Team', teamId: number, teamName: string, teamCity: string, wins: number, losses: number, teamTricode: string, score: number, seed: number, inBonus?: number | null, timeoutsRemaining: number, periods: Array<{ __typename?: 'Period', score: number, periodType: string, period: number } | null> }, awayTeam: { __typename?: 'Team', teamName: string, teamId: number, teamCity: string, teamTricode: string, wins: number, losses: number, score: number, seed: number, inBonus?: number | null, timeoutsRemaining: number, periods: Array<{ __typename?: 'Period', score: number, periodType: string, period: number } | null> }, gameLeaders: { __typename?: 'GameLeaders', awayLeaders: { __typename?: 'Player', personId: number, name: string, jerseyNum: string, position: string, teamTricode: string, playerSlug?: string | null, points: number, rebounds: number, assists: number }, homeLeaders: { __typename?: 'Player', personId: number, name: string, jerseyNum: string, position: string, teamTricode: string, playerSlug?: string | null, rebounds: number, points: number, assists: number } }, pbOdds: { __typename?: 'PbOdds', suspended: number, odds: number, team?: string | null } } | null> } };
+export type TodaysScoreBoardQuery = { __typename?: 'Query', todaysScoreBoard: { __typename?: 'TodaysScoreBoard', gameDate: string, leagueId: string, leagueName: string, games: Array<{ __typename?: 'Game', gameId: string, gameCode: string, gameStatus: number, gameStatusText: string, period: number, gameClock: string, gameTimeUTC: string, regulationPeriods: number, ifNecessary: boolean, gameEt: string, seriesGameNumber: string, seriesText: string, homeTeam: { __typename?: 'Team', teamId: number, teamName: string, teamCity: string, wins: number, losses: number, teamTricode: string, score: number, seed: number, inBonus?: number | null, timeoutsRemaining: number, periods: Array<{ __typename?: 'Period', score: number, periodType: string, period: number }> }, awayTeam: { __typename?: 'Team', teamName: string, teamId: number, teamCity: string, teamTricode: string, wins: number, losses: number, score: number, seed: number, inBonus?: number | null, timeoutsRemaining: number, periods: Array<{ __typename?: 'Period', score: number, periodType: string, period: number }> }, gameLeaders: { __typename?: 'GameLeaders', awayLeaders: { __typename?: 'Player', personId: number, name: string, jerseyNum: string, position: string, teamTricode: string, playerSlug?: string | null, points: number, rebounds: number, assists: number }, homeLeaders: { __typename?: 'Player', personId: number, name: string, jerseyNum: string, position: string, teamTricode: string, playerSlug?: string | null, rebounds: number, points: number, assists: number } }, pbOdds: { __typename?: 'PbOdds', suspended: number, odds: number, team?: string | null } }> } };
 
 
 export const TodaysScoreBoardDocument = gql`

@@ -6,7 +6,6 @@ interface BasketBallPageProps {}
 const BasketBallPage = ({}: BasketBallPageProps) => {
   return (
     <Box>
-      Basket Ball Page
       <LiveScoreBoards />
     </Box>
   );

@@ -1,6 +1,7 @@
-import { Database, BallBasketball, SoccerField } from "tabler-icons-react";
 import { ThemeIcon, UnstyledButton, Group, Text, Anchor } from "@mantine/core";
 import { Link } from "react-router-dom";
+import { BsTable } from "react-icons/bs";
+import { MdDashboard } from "react-icons/md";
 
 interface MainLinkProps {
   icon: React.ReactNode;
@@ -43,22 +44,16 @@ function MainLink({ icon, color, label, link }: MainLinkProps) {
 
 const data = [
   {
-    icon: <BallBasketball size={16} />,
+    icon: <MdDashboard size={16} />,
     color: "orange",
     label: "Basket Ball",
-    link: "/basketball",
+    link: "/home",
   },
   {
-    icon: <SoccerField size={16} />,
-    color: "blue",
-    label: "Soccer",
-    link: "/soccer",
-  },
-  {
-    icon: <Database size={16} />,
+    icon: <BsTable size={16} />,
     color: "grape",
-    label: "Databases",
-    link: "/databases",
+    label: "Tables",
+    link: "/tables",
   },
 ];
 

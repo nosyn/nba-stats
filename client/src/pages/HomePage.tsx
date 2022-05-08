@@ -6,7 +6,6 @@ interface HomePageProps {}
 const HomePage = ({}: HomePageProps) => {
   return (
     <Box>
-      Home Page
       <LiveScoreBoards />
     </Box>
   );

@@ -1,5 +1,4 @@
-import React from "react";
-import { ChevronRight, ChevronLeft } from "tabler-icons-react";
+import { MdChevronRight, MdChevronLeft } from "react-icons/md";
 import {
   UnstyledButton,
   Group,
@@ -55,9 +54,9 @@ export function User() {
           </Box>
 
           {theme.dir === "ltr" ? (
-            <ChevronRight size={18} />
+            <MdChevronRight size={18} />
           ) : (
-            <ChevronLeft size={18} />
+            <MdChevronLeft size={18} />
           )}
         </Group>
       </UnstyledButton>

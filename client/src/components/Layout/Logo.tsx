@@ -1,6 +1,6 @@
 import { Anchor, Group, Text } from "@mantine/core";
 import { Link } from "react-router-dom";
-import { Dashboard } from "tabler-icons-react";
+import { FaBasketballBall } from "react-icons/fa";
 
 const Logo = () => {
   return (
@@ -9,14 +9,14 @@ const Logo = () => {
       to="/"
       align="center"
       variant="gradient"
-      gradient={{ from: "indigo", to: "cyan", deg: 45 }}
+      gradient={{ from: "IndianRed", to: "LightSalmon", deg: 45 }}
       size="xl"
       weight={700}
       style={{ fontFamily: "Greycliff CF, sans-serif" }}
     >
       <Group spacing="sm">
-        <Dashboard size={32} strokeWidth={2} color="orange" />
-        Live Sports
+        <FaBasketballBall size={26} color="orange" />
+        NBA Live
       </Group>
     </Anchor>
   );
